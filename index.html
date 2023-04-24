@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <header>
+      <img src="img/radcat.png" alt="log">
+      <h1>СSS селекторы</h1>
+   </header>
+   <main>
+      <div class="blok-border">
+         <div id="menu">
+            <h2>содержание</h2>
+            <ol>
+               <li><a href="#teg">селектор тега</a></li>
+               <li><a href="#clas">селектор класса</a></li>
+               <li><a href="#some-class">селектор нескольких классов</a></li>
+               <li><a href="#relat">наследование</a></li>
+               <li><a href="#next">следующий элемент</a></li>
+               <li><a href="#many-elem">обращение к нескольким элементам</a></li>
+            </ol>
+         </div>
+         <div>
+            <img src="img/mario.jpg" alt="mario" class="mario">
+         </div>
+      </div>
+      <div class="blok-border " id="teg">
+         <h3>селектор тега</h3>
+         <p>изменяет все теги на странице tag{}</p>
+         <ul>
+            <li>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quam quas quisquam tenetur corrupti
+                  accusamus id aut quibusdam perspiciatis veritatis, impedit hic sunt error, deserunt nam! Tempora magni
+                  excepturi dicta?</p>
+            </li>
+            <li>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quam quas quisquam tenetur corrupti
+                  accusamus id aut quibusdam perspiciatis veritatis, impedit hic sunt error, deserunt nam! Tempora magni
+                  excepturi dicta?</p>
+            </li>
+            <li>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quam quas quisquam tenetur corrupti
+                  accusamus id aut quibusdam perspiciatis veritatis, impedit hic sunt error, deserunt nam! Tempora magni
+                  excepturi dicta?</p>
+            </li>
+            <li>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quam quas quisquam tenetur corrupti
+                  accusamus id aut quibusdam perspiciatis veritatis, impedit hic sunt error, deserunt nam! Tempora magni
+                  excepturi dicta?</p>
+            </li>
+            <li>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quam quas quisquam tenetur corrupti
+                  accusamus id aut quibusdam perspiciatis veritatis, impedit hic sunt error, deserunt nam! Tempora magni
+                  excepturi dicta?</p>
+            </li>
+         </ul>
+         <a href="#menu">назад к содержанию</a>
+      </div>
+      <div class="blok-border" id="clas">
+         <h3>Селектор класса</h3>
+         <p>изменяет конкретный класс .class{}</p>
+         <p class="text-color ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum soluta, sed, ipsum
+            voluptatibus necessitatibus saepe placeat dolor quo cumque ratione neque libero quod provident nostrum
+            perferendis. Debitis, in eos.</p>
+         <a href="#menu">назад к содержанию</a>
+      </div>
+      <div class="blok-border" id="some-class">
+         <h3>селектор нескольких класов</h3>
+         <p>меняет тот тег у которого есть перечисленые класы .class1.class2/#id{}</p>
+         <ul>
+            <li>
+               <p class="firs">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, similique illum quidem amet
+                  reprehenderit optio modi eveniet distinctio debitis laboriosam cupiditate minus sequi ab, ipsa nostrum
+                  provident fugit quaerat quod.
+               </p>
+            </li>
+            <li>
+               <p class="firs second">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, similique illum quidem amet
+                  reprehenderit optio modi eveniet distinctio debitis laboriosam cupiditate minus sequi ab, ipsa nostrum
+                  provident fugit quaerat quod.
+               </p>
+            </li>
+            <li>
+               <p class="firs">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, similique illum quidem amet
+                  reprehenderit optio modi eveniet distinctio debitis laboriosam cupiditate minus sequi ab, ipsa nostrum
+                  provident fugit quaerat quod.
+               </p>
+            </li>
+            <li>
+               <p class="firs">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, similique illum quidem amet
+                  reprehenderit optio modi eveniet distinctio debitis laboriosam cupiditate minus sequi ab, ipsa nostrum
+                  provident fugit quaerat quod.
+               </p>
+            </li>
+            <li>
+               <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, similique illum quidem amet
+                  reprehenderit optio modi eveniet distinctio debitis laboriosam cupiditate minus sequi ab, ipsa nostrum
+                  provident fugit quaerat quod.
+               </p>
+            </li>
+         </ul>
+         <a href="#menu">назад к содержанию</a>
+      </div>
+      <div class="blok-border" id="relat">
+         <h3>наследование</h3>
+         <p>можно обратится к <span>непосредственно дочернему</span> тегу elem> elem{}</p>
+         <p>или к тегу что содержится в "боксе" elem elem{}</p>
+         <h4>как то так</h4>
+         <div><img src="img/beer.png" alt="beer" title="медведь"></div>
+         <a href="#menu">назад к содержанию</a>
+      </div>
+      <div class="blok-border" id="next">
+         <h3>следующий элемент</h3>
+
+         <div class="next-elem">
+            <p>можно изменить все елементы одного типа на уровне после текущего elem ~ elem</p>
+            <p>или же первый после текущего elem + elem{}</p>
+         </div>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, cum dolorem. Quis ipsum delectus totam
+            tempore ullam incidunt nobis, magni sed, quas temporibus vel dicta dolorum!</p>
+         <p>Ex adipisci tempora repellendus, minima suscipit quaerat voluptatem incidunt, officiis fugit sit voluptas
+            nostrum exercitationem velit iste explicabo dolorum eveniet esse cumque hic! Sunt, porro quas.</p>
+         <p>Similique consequuntur eum temporibus aperiam ab cupiditate distinctio qui. Blanditiis nemo aliquam placeat
+            officiis, maxime, necessitatibus exercitationem quis non cupiditate, quod nam sint possimus aliquid sequi.
+         </p>
+         <p>Totam aliquid, vel soluta voluptate hic vero possimus, quasi voluptatibus animi impedit incidunt quas
+            explicabo quisquam distinctio, nostrum mollitia. Modi, quo? Voluptatum eum ratione numquam quod?</p>
+         <p>Ratione, quibusdam minus quos facilis id iure? Doloribus est accusantium soluta tempore. Nostrum facilis, at
+            error aperiam, dolor sed nesciunt, ea ab laudantium quibusdam quia nisi.</p>
+
+         <a href="#menu">назад к содержанию</a>
+      </div>
+      <div class="blok-border" id="many-elem">
+         <h3>обращение к нескольким елементы</h3>
+         <p>можно обращатся сразу к нескольким елементам elem,elem,..{}</p>
+
+         <p class="first-blok">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut repudiandae
+            possimus et quaerat excepturi soluta labore dolorem quis natus consequuntur quam quidem, ut iste dolores
+            laboriosam temporibus adipisci ab!</p>
+         <p class="second-blok">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit omnis iusto culpa
+            eligendi repellendus fugiat dolore! Accusamus velit doloremque veniam, earum mollitia quam deleniti nam at
+            quos voluptates magnam sit amet quas in maiores ipsam officia. Et quas minima laudantium!</p>
+         <p class="third-blok">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos repellat, itaque,
+            atque ipsam quam reprehenderit aperiam esse a architecto tempora dolorum quae ad iure! Voluptatibus tenetur
+            vitae architecto.</p>
+         <a href="#menu">назад к содержанию</a>
+      </div>
+   </main>
+   <footer>
+
+      <span>вот что мы уже знаем!</span>
+   </footer>
+</body>
+
+</html>

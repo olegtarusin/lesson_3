@@ -1,0 +1,50 @@
+ul {
+   color: #3b31a9;
+}
+
+.text-color {
+   color: #d6902d;
+}
+
+.firs.second {
+   color: #2dd646;
+}
+
+.blok-border {
+   border: 2px solid #5c5b61;
+   padding: 20px;
+}
+
+#relat span {
+   color: red;
+}
+
+#relat>h4 {
+   font-size: 30px;
+   color: #d6902d;
+}
+
+body {
+   font-size: 20px;
+   margin: 0px 0px 0px 0px;
+}
+
+.next-elem~p {
+   color: #2dd646;
+}
+
+.next-elem+p {
+   color: red;
+}
+
+.first-blok,
+.second-blok,
+.third-blok {
+   color: rgb(160, 113, 56);
+   font-size: 30px;
+}
+
+.mario {
+   width: 100px;
+   height: 140px;
+}
